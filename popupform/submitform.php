@@ -24,11 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $name, $email, $mobile, $destination, $level);
 
     if ($stmt->execute()) {
-        echo "Thank you, $name! Your form has been submitted successfully.";
+        echo "Thank you, $name! Your form has been submitted successfully.";                     
     } else {
         echo "Error: " . $stmt->error;
     }
-
     // Close statement and connection
     $stmt->close();
     $conn->close();
