@@ -1,0 +1,259 @@
+/* Recruiter Hero Section */
+.recruiter-hero {
+    background-color: #022B3A; /* Deep teal for the background */
+    padding: 60px 20px;
+    min-height: 100vh; /* Full viewport height */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  .recruiter-hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .recruiter-hero .text-box {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
+  }
+  
+  .recruiter-hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .recruiter-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cdd4d9; /* Muted light text for readability */
+  }
+  
+  .recruiter-hero .btn-primary {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient for button */
+    border: none;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .recruiter-hero .btn-primary:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .recruiter-hero .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .recruiter-hero .image-container img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .recruiter-hero .image-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recruiter-hero .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .recruiter-hero .text-box {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+                /* page 2 */
+    /* Recruiter Benefits Section */
+/* Recruiter Benefits Section */
+.recruiter-benefits {
+  background: linear-gradient(45deg, #f8f9fa, #e8f5ff); /* Subtle gradient background */
+  border: 1px solid #dce3eb;
+  border-radius: 15px;
+  padding: 50px 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.recruiter-benefits .container {
+  display: flex;
+  align-items: stretch; /* Stretch both image and text to equal height */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+  gap: 30px; /* Add spacing between text and image */
+}
+
+.recruiter-benefits .image-box {
+  flex: 1; /* Equal space for image and text */
+  max-width: 45%; /* Restrict the image container to 45% width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruiter-benefits .image-box img {
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Ensure the image stretches vertically */
+  max-height: 400px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recruiter-benefits .text-box {
+  flex: 1; /* Equal space for text and image */
+  max-width: 55%; /* Restrict the text container to 55% width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the text */
+}
+
+.recruiter-benefits .text-box h6 {
+  font-size: 1.2rem;
+  color: #e63946; /* Red for subtitle */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recruiter-benefits .text-box h2 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+
+.recruiter-benefits ul {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.recruiter-benefits ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057; /* Muted text */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recruiter-benefits ul li i {
+  font-size: 1.5rem;
+  color: #28a745; /* Green checkmark color */
+  margin-right: 10px;
+}
+
+.recruiter-benefits .btn-primary {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient button */
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.recruiter-benefits .btn-primary:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recruiter-benefits .container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center;
+  }
+
+  .recruiter-benefits .image-box,
+  .recruiter-benefits .text-box {
+    max-width: 100%;
+  }
+
+  .recruiter-benefits .text-box {
+    margin-top: 20px;
+  }
+
+  .recruiter-benefits .image-box img {
+    max-height: 300px; /* Adjust image height for smaller screens */
+  }
+}
+               /*3rd page*/
+               /* About Us Section */
+.about-us {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.about-us h6 {
+  font-size: 1.2rem;
+  color: #ff6f61;
+  text-transform: uppercase;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.about-us h2 .highlight {
+  color: #007bff; /* Highlight in blue */
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns for the stats */
+  gap: 20px;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #ff6f61; /* Red for numbers */
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+.about-us .description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Add animation */
+.stats .stat-item {
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,48 @@
+<div class="popup-form-overlay" id="popupForm">
+    <div class="popup-form">
+        <div class="form-header">
+            <h2>Start Your Journey!</h2>
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+        </div>
+
+        <form action="popupform/submitform.php" method="post">
+            <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile <span class="required">*</span></label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="study-destination">Preferred Study Destination <span class="required">*</span></label>
+                <select id="study-destination" name="study-destination" required>
+                    <option value="" disabled selected>Please select</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="study-level">Preferred Study Level <span class="required">*</span></label>
+                <select id="study-level" name="study-level" required>
+                    <option value="" disabled selected>Please select</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+</div>

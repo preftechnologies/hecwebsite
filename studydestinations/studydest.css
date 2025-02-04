@@ -1,0 +1,144 @@
+/* Page Background */
+body {
+    background: linear-gradient(45deg, #f3f4f7, #dfe7ee);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 2rem 0;
+}
+
+.fancy-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #fefefe;
+}
+
+/* Country Blocks */
+/* Make the link cover the entire block */
+.country-link {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link behave like a block */
+    width: 100%; /* Ensure it spans the full width of the parent */
+    height: 100%; /* Ensure it spans the full height of the parent */
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure the block is visually appealing */
+.country-block {
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for blocks */
+.country-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.country-block h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+            
+/* Responsive Design */
+@media (max-width: 768px) {
+    .country-block {
+        height: 150px;
+    }
+
+    .fancy-heading {
+        font-size: 2rem;
+    }
+}      /* code for UK page */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+section h2 {
+    color: #0056b3;
+    border-left: 5px solid #0073e6;
+    padding-left: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0073e6;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Course Grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.course-item {
+    background: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
