@@ -67,6 +67,12 @@ header nav ul li a {
   }
 }
 
+/* Add padding between header and popup form */
+.popup-form-overlay {
+  padding-top: 100px;  /* Adjust this value to control the space */
+}
+
+
 /* Hero Section */
 .hero {
   
@@ -704,4 +710,53 @@ input, select {
 .show-popup {
   opacity: 1;
   visibility: visible;
+}
+...........................
+/* Fix Header Overlap */
+body {
+  padding-top: 80px; /* Adjust this value based on your header height */
+  margin: 0;
+}
+
+/* Make sure the header is fixed */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #0A2E4F; /* Adjust if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Adjust Hero Section */
+.hero {
+  padding-top: 100px; /* Adds space below the header */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Popup Form Alignment */
+.popup-form-overlay {
+  top: 80px; /* Aligns the form below the header */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation Links */
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #004a8b;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }

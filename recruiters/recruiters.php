@@ -40,7 +40,7 @@
         <p>
           Entrily is looking for student recruitment partners to join our global network as active partners. A partner has full access to over 49,000+ trending courses delivered by more than 720+ top-ranked and leading institutions in top 10+ countries.
         </p>
-        <a href="#" class="btn btn-primary btn-lg">Become a recruiter partner</a>
+        <a href="partnersform.php" class="btn btn-primary btn-lg">Become a recruiter partner</a>
       </div>
 
       <!-- Right Image -->
@@ -66,7 +66,7 @@
           <li><i class="bi bi-check-circle-fill"></i> Free training, visa assistance, and global reach.</li>
           <li><i class="bi bi-check-circle-fill"></i> Open a world of opportunities for students.</li>
         </ul>
-        <a href="#" class="btn btn-primary">Become a recruiter partner</a>
+        <a href="partnersform.php" class="btn btn-primary">Become a recruiter partner</a>
       </div>
     </div>
   </section>

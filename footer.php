@@ -1,114 +1,133 @@
-<style>
-    /* Footer Styling Fix */
-    .footer {
-        width: 100%; /* Ensures full width */
-        background: linear-gradient(135deg, #1d1d1d, #333);
-        color: #ffffff;
-        padding: 40px 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .footer .container {
-        width: 90%; /* Adjusted width to fit nicely on all pages */
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-    }
-
-    .footer .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        color: #f1c40f;
-    }
-
-    .footer p {
-        font-size: 16px;
-    }
-
-    .footer .footer-social a {
-        display: inline-block;
-        color: #ffffff;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 10px;
-        border-radius: 50%;
-        margin-right: 8px;
-        font-size: 18px;
-        transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .footer .footer-social a:hover {
-        background: #f1c40f;
-        color: #222;
-        transform: scale(1.1);
-    }
-
-    .footer .map-container {
-        width: 100%;
-        height: 250px;
-        background: #222;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @media (max-width: 768px) {
-        .footer .row {
-            flex-direction: column;
-            text-align: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        .footer .map-container {
-            margin-top: 20px;
-        }
-    }
-</style>
 
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="footer-contact">
-                    <h2>GET IN TOUCH</h2>
-                    <p><i class="fa fa-map-marker-alt"></i> Anchor Unit, 5 Limeharbour Court, London, E14 9RH, United Kingdom</p>
-                    <p><i class="fa fa-phone-alt"></i> +012 345 67</p>
-                    <p><i class="fa fa-envelope"></i> info@example.com</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+        /* Footer Styles */
+        .footer {
+            width: 100%;
+            background-color: #0A2E4F;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #b0c4de;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-buttons a {
+            display: inline-block;
+            background-color: #0063B1;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .footer-buttons a:hover {
+            background-color: #004a8b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-column {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Study Destinations Column -->
+            <div class="footer-column">
+                <h4>Study Destinations</h4>
+                <ul>
+                    <li><a href="studydestinations/uk.html">United Kingdom</a></li>
+                    <li><a href="studydestinations/usa.html">USA</a></li>
+                    <li><a href="studydestinations/canada.html">Canada</a></li>
+                    <li><a href="studydestinations/ireland.html">Ireland</a></li>
+                    <li><a href="studydestinations/australia.html">Australia</a></li>
+                    <li><a href="studydestinations/france.html">France</a></li>
+                </ul>
             </div>
-            <div class="col-md-6 col-lg-6">
-                <h2>OUR LOCATION</h2>
-                <div class="map-container">
-                    <div id="googleMap" style="width:100%; height:100%;"></div>
-                </div>
+
+            <!-- Help & Contact Column -->
+            <div class="footer-column">
+                <h4>Help & Contact</h4>
+                <ul>
+                    <li><a href="contact.php">Contact Us</a></li>
+                </ul>
             </div>
+
+            <!-- Careers & Consultation Column -->
+            <div class="footer-column footer-buttons">
+                <h4>Careers</h4>
+                <a href="careers.php">We Are Hiring</a>
+                
+            </div>
+
         </div>
-    </div>
-</div>
+    </footer>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvVJaX6nBeOwR8PqQQopoVTtXGdT7leAA&callback=initMap" async defer></script>
-<script>
-    function initMap() {
-        const officeLocation = { lat: 51.4974264855, lng: -0.0130341130404 };
-        const map = new google.maps.Map(document.getElementById("googleMap"), {
-            zoom: 15,
-            center: officeLocation,
-        });
-        new google.maps.Marker({
-            position: officeLocation,
-            map: map,
-            title: "Anchor Unit, 5 Limeharbour Court",
-        });
-    }
-</script>
+</body>
+</html>

@@ -313,5 +313,11 @@ $conn->close();
   <!-- Include the footer script -->
   <?php include 'footer.php'; ?>
   <script src="script.js"></script>
+  <!-- Add padding above the popup form -->
+  <div class="popup-container">
+    <?php include 'popupform/popupform.php'; ?>
+</div>
+
+
 </body>
 </html>

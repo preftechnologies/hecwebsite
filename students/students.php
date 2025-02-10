@@ -106,32 +106,7 @@
 </section>
     
 <!-- Free Services Section -->
-<section class="free-services py-5">
-    <div class="container text-center">
-      <h6 class="text-danger fw-bold">FREE SERVICES</h6>
-      <h2 class="fw-bold">Free Services from HEC</h2>
-      <div class="row mt-5 gy-4">
-        <div class="col-md-4">
-          <div class="card p-4 shadow border-0">
-            <i class="bi bi-clipboard-check display-4 text-primary mb-3"></i>
-            <h5 class="fw-bold">SOP Guidance</h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow border-0">
-            <i class="bi bi-file-earmark-person display-4 text-primary mb-3"></i>
-            <h5 class="fw-bold">CV Creator</h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-4 shadow border-0">
-            <i class="bi bi-person-video3 display-4 text-primary mb-3"></i>
-            <h5 class="fw-bold">Student Counseling</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+
 
 
 
